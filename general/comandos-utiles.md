@@ -1,3 +1,3 @@
 # Comandos Utiles
 
-Encontramos aqui diferentes comandos cuatro
+Encontramos aqui diferentes comandos cinco
