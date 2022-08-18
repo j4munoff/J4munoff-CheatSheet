@@ -4,7 +4,7 @@ Máquina **Lame** de dificultad **Easy**.
 
 ![](../../.gitbook/assets/htb\_lame.png)
 
-## Emumeración
+## Enumeración
 
 Primeramente realizamos un escaneo nmap rápido para averiguar los puertos abiertos.
 
@@ -39,3 +39,7 @@ Vemos que tenemos acceso anonimo. Vamos a ver si podemos obtener información y 
 ![](../../.gitbook/assets/ftp.png)
 
 Vemos que no obtenemos ficheros ni podemos escribir con el usuario anónimo. De momento dejamos este servicio.
+
+### Reconocimiento SMB
+
+Enumeramos en detall el servicio SMB. Realizamos una enumeración utilizando **crackmapexec, smbmap y smbclient**.
