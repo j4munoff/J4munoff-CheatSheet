@@ -7,6 +7,10 @@
 * [Introducción](general/introduccion.md)
 * [Comandos Utiles](general/comandos-utiles.md)
 
+## Pentesting
+
+* [Escaneo de puertos](pentesting/escaneo-de-puertos.md)
+
 ## WriteUps
 
 * [HackThebox](writeups/hackthebox/README.md)
