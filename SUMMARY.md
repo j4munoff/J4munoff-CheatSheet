@@ -16,3 +16,4 @@
 
 * [HackThebox](writeups/hackthebox/README.md)
   * [Lame](writeups/hackthebox/lame.md)
+  * [Legacy](writeups/hackthebox/legacy.md)
