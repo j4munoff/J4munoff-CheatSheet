@@ -5,7 +5,8 @@
 ## General
 
 * [Introducción](general/introduccion.md)
-* [Comandos Utiles](general/comandos-utiles.md)
+* [Comandos Utiles](general/comandos-utiles/README.md)
+  * [Shell y reverse Shell](general/comandos-utiles/shell.md)
 
 ## Pentesting
 
