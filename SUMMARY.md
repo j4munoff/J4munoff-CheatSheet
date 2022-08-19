@@ -6,6 +6,7 @@
 
 * [Introducción](general/introduccion.md)
 * [Comandos Utiles](general/comandos-utiles/README.md)
+  * [KALI](general/comandos-utiles/kali.md)
   * [Shell y reverse Shell](general/comandos-utiles/shell.md)
   * [SMB](general/comandos-utiles/smb.md)
 
