@@ -13,6 +13,8 @@
 ## Pentesting
 
 * [Escaneo de puertos](pentesting/escaneo-de-puertos.md)
+* [Escalada de Privilegios](pentesting/escalada-de-privilegios/README.md)
+  * [Windows](pentesting/escalada-de-privilegios/windows.md)
 
 ## WriteUps
 
