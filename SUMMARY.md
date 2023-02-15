@@ -9,6 +9,7 @@
   * [KALI](general/comandos-utiles/kali.md)
   * [Shell y reverse Shell](general/comandos-utiles/shell.md)
   * [SMB](general/comandos-utiles/smb.md)
+  * [Prueba](general/comandos-utiles/prueba.md)
 
 ## Pentesting
 
