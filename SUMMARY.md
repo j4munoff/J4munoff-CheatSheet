@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🦜 Bienvenida](README.md)
+* [Bienvenida](README.md)
 
 ## General
 
