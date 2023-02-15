@@ -1,8 +1,9 @@
 ---
 description: >-
-  Esto es un repositorio de información donde almaceno todas las cosas útiles
-  que estoy recuperando en mi formación como pentester.
+  Se crea este repositorio de información para poder documentar todos los
+  avances en la preparación del equipo de AFI en ciberseguridad.
 ---
 
-# 🦜 Que es esto
+# 🦜 Bienvenida
 
+La idea
