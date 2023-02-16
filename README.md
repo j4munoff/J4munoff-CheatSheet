@@ -1,12 +1,10 @@
 ---
-description: >-
-  Se crea este repositorio de información para poder documentar todos los
-  avances en la preparación del equipo de AFI en ciberseguridad.
----
 
-# Introducción
+# Inicio
 
 ## Objetivo
+
+ Se crea este repositorio de información para poder documentar todos los avances en la preparación del equipo de AFI en ciberseguridad.
 
 La idea es tener aqui un repositorio con todos los conocimientos adquiridos de manera que sirva como libro de consulta y que pueda ayudar al resto de compañeros.
 
