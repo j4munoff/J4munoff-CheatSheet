@@ -16,11 +16,11 @@ Lo primero de todo es instalarnos una máquina virtual. Normalmente se usa [Kali
 
 Previamente hay que instalarse un software de virtualización. Existen muchos pero se recomienda:
 
-* **[VMware Workstation Pro](https://www.vmware.com/es/products/workstation-pro.html)**, Es el mas recomendado pero es de pago, aunque es posible conseguir licencia muy barata.
-* **[Oracle VirtualBox](https://www.virtualbox.org/)**, Es gratuito y se puede hacer lo mismo que con el anterior, pero da menor rendimiento.
-* **[VMware Player](https://www.vmware.com/es/products/workstation-player.html)**, Es gratuito y da buen rendimiento, pero no permite personalizar redes NAT, (necesario en prácticas de pivoting), y tampoco permite tomar instantaneas de maquinas virtuales.
+* [**VMware Workstation Pro**](https://www.vmware.com/es/products/workstation-pro.html), Es el mas recomendado pero es de pago, aunque es posible conseguir licencia muy barata.
+* [**Oracle VirtualBox**](https://www.virtualbox.org/), Es gratuito y se puede hacer lo mismo que con el anterior, pero da menor rendimiento.
+* [**VMware Player**](https://www.vmware.com/es/products/workstation-player.html), Es gratuito y da buen rendimiento, pero no permite personalizar redes NAT, (necesario en prácticas de pivoting), y tampoco permite tomar instantaneas de maquinas virtuales.
 
-Una vez instalado el software de virtualización debemos proceder a instalar la maquina virtual que queramos. 
+Una vez instalado el software de virtualización debemos proceder a instalar la maquina virtual que queramos.
 
-* [Instalación y configuración de Kali Linux en VMWare](caracter-general/entornos-trabajo/kali_vmware.md)
+* [Instalación y configuración de Kali Linux en VMWare](broken-reference)
 * Instalar y configurar Parrot Security
