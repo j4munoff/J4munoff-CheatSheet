@@ -63,6 +63,10 @@ Se aceptan los cambios y se arranca la máquina virtual pulsando la opción **Po
 
 El usuario/password por defecto es **kali/kali**.
 
+### Principales ataos en VMware
+
+* **Ctlr+Alt+Enter**: Entrar o salir de pantalla completa.
+* **Ctlr+Alt**: Escapar de la máquina virtual. Se libera el ratón.
 
 ## Actualización y configuración de Kali Linux
 
@@ -106,12 +110,35 @@ Ejecutamos el siguiente comando para actualizar:
 ```bash
 apt update && apt upgrade -y
 ```
-
 El **-y** es para que no pregunte confirmación.
+
+<div style="border: 1px solid black;background-color:#692A23">
+    <h2><b>Importante</b></h2>
+</div>
+
+Si falla el upgrade es porque hay que editar el fichero /etc/apt/sources.list y cambiar <b>http</b> por <b>https</b>.
+    
+Esto se puede hacer ejecutando en consola el comando nano:
+
+```bash
+sudo nano /etc/apt/sources.list 
+```
+
+![](/.gitbook/assets/kali18.png)
+
+Para guardar *Ctlr+o* y para salir de nano *Ctlr+x*
+
+Y volvemos a intentar `sudo nano /etc/apt/sources.list`.
 
 ![](/.gitbook/assets/kali17.png)
 
-Esperamos a que acabe y reiniciamos el sistema. Desde la consola se puede reiniciar con el comando:
+Esperamos a que acabe y eliminamos los ficheros obsoletos con el comando:
+
+```bash
+apt autoremove
+```
+
+ Reiniciamos el sistema. Desde la consola se puede reiniciar con el comando:
 
 ```bash
 reboot
@@ -119,19 +146,63 @@ reboot
 
 ### Instalar herramientas y configurar el sistema
 
-### Agregar repositorios de Subleme Text
+Vamos a instalar una serie de herramientas utiles:
 
-**Sublime Text** es un editor que a mi me gusta bastante y es el que suelo usar. Hay que agregar el repositorio.
+* **Terminator**: Es un gestor de terminal muy versatil que permite, entre otras cosas dividir la terminal en varias terminales.
+* **Sublime Text**: Editor de texto muy completo.
+* **Locate**: Permite localizar ficheros en el sistema de forma rápida.
+* **Aptitude**: Utilidad que permite buscar herramientas en los repositorios de software.
+* **Cherrytree**: Programa para tomar notas de pentesting, muy versatil.
+* **VS Code**: IDE de programación muy util para trabajar con **markdown** y por su integración con github.
 
+De todas las herramientas hay dos que no están en los repositorios oficiales y hay que añadir los repositorios.
+
+#### Agregar repositorios de Subleme Text
+
+Para agregar el repositorio abrimos una terminal y escribimos los siguientes comandos:
+
+```bash
+sudo apt install software-properties-common apt-transport-https curl wget gpg ca-certificates -y
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo apt update
 ```
-sudo apt install software-properties-common apt-transport-https curl wget ca-certificates -y
-sudo wget -O- https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/sublimehq.gpg
-echo 'deb [signed-by=/usr/share/keyrings/sublimehq.gpg] https://download.sublimetext.com/ apt/stable/' | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt-get update
+#### Agregar repositorios de VS Code
+
+Para agregar el repositorio abrimos una terminal y escribimos los siguientes comandos:
+
+```bash
+sudo apt install software-properties-common apt-transport-https curl wget gpg ca-certificates -y
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+rm -f packages.microsoft.gpg
+sudo apt update
+```
+La primera linea la podemos obviar si hemos agregado el repositorio anterior.
+
+#### Instalar programas 
+
+Ahora con los repositorios instados y actualizados podemos instalar los prgramas indicados ejecutando el siguiente comando.
+
+```bash
+sudo apt install terminator aptitude sublime-text locate code cherrytree -y 
 ```
 
-### Instalar programas interesantes
+### Configur el sistema.
 
-```
-sudo apt install kitty aptitude sublime-text locate -y 
-```
+Configuramos brevemente el sistema.
+
+Podemos agregar las aplicaciones mas utilizadas a la barra superior.
+
+![](/.gitbook/assets/kali19.png)
+
+Pone el icono al final, pero se puede mover.
+
+![](/.gitbook/assets/kali20.png)
+
+Podemos eliminar los iconos que no se usen, la terminal y el editor por defectos, y añadir los que queramos. 
+
+Es este caso se añaden accesos para terminator, Sublime Text, Cherrytree, VSCode y Burpsuite.
+
+![](/.gitbook/assets/kali21.png)
