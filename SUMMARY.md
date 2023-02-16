@@ -4,6 +4,6 @@
 
 ## Carácter general
 
-* [Introducción](caracter-general/introduccion.md)
-* [Entornos de trabajo](caracter-general/entornos-trabajo/README.md)
-  * [Kali Linux](caracter-general/entornos-trabajo/kali.md)
+* [Introducción](general/introduccion.md)
+* [Entornos de trabajo](general/comandos-utiles/README.md)
+  * [Kali Linux](general/comandos-utiles/kali.md)
