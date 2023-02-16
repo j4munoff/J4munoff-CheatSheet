@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introducción](README.md)
+* [Inicio](README.md)
 
 ## Carácter general
 
