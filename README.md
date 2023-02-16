@@ -22,5 +22,5 @@ Previamente hay que instalarse un software de virtualización. Existen muchos pe
 
 Una vez instalado el software de virtualización debemos proceder a instalar la maquina virtual que queramos. 
 
-* Instalar y configurar Kali Linux
+* [Instalación y configuración de Kali Linux en VMWare](caracter-general/entornos-trabajo/kali_vmware.md)
 * Instalar y configurar Parrot Security
