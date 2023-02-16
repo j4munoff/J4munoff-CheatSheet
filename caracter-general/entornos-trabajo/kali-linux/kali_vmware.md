@@ -8,7 +8,7 @@ Aqui describimos algunos comandos para **tunear** Kali Linux. Tambien es compati
 sudo apt update && sudo apt upgrade -y
 ```
 
-El **-y** es para que no pregunte confirmación.
+El **-y** es para que no pregunte confirmación.a
 
 ### Agregar repositorios de Subleme Text
 
