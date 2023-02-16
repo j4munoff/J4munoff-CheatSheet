@@ -63,7 +63,7 @@ Se aceptan los cambios y se arranca la máquina virtual pulsando la opción **Po
 
 El usuario/password por defecto es **kali/kali**.
 
-### Principales ataos en VMware
+### Principales atajos en VMware
 
 * **Ctlr+Alt+Enter**: Entrar o salir de pantalla completa.
 * **Ctlr+Alt**: Escapar de la máquina virtual. Se libera el ratón.
@@ -189,7 +189,7 @@ Ahora con los repositorios instados y actualizados podemos instalar los prgramas
 sudo apt install terminator aptitude sublime-text locate code cherrytree -y 
 ```
 
-### Configur el sistema.
+### Configurar el sistema.
 
 Configuramos brevemente el sistema.
 
