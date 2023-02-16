@@ -1,15 +1,14 @@
----
-
-# Inicio
-
-## Objetivo
+# Objetivo
 
  Se crea este repositorio de información para poder documentar todos los avances en la preparación del equipo de AFI en ciberseguridad.
 
 La idea es tener aqui un repositorio con todos los conocimientos adquiridos de manera que sirva como libro de consulta y que pueda ayudar al resto de compañeros.
 
-## Consejos para comenzar
+# Consejos para comenzar
 
+
+
+# Preparación de entorno de trabajo
 Lo primero de todo es instalarnos una máquina virtual. Normalmente se usa [Kali Linux](https://www.kali.org/) pero tambien está muy extendido el uso de [Parrot Security](https://www.parrotsec.org/).
 
 Previamente hay que instalarse un software de virtualización. Existen muchos pero se recomienda:
@@ -21,4 +20,4 @@ Previamente hay que instalarse un software de virtualización. Existen muchos pe
 Una vez instalado el software de virtualización debemos proceder a instalar la maquina virtual que queramos.
 
 * [Instalación y configuración de Kali Linux en VMWare](broken-reference)
-* Instalar y configurar Parrot Security
+* [Instalación y configuración de Kali Linux en VirtualBox](caracter-general/entornos-trabajo/kali-linux/kali-virtualbox.md)
