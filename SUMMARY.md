@@ -13,6 +13,7 @@
 ## Pentesting
 
 * [Introducción](pentesting/introduccion.md)
+* [Recursos pentesting](pentesting/recursos-pentesting.md)
 * [Enumeración](pentesting/enumeracion.md)
 * [Explotación](pentesting/explotacion.md)
 * [Escalada de privilegios](pentesting/escalada-de-privilegios.md)
