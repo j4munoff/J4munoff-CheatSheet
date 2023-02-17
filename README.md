@@ -77,3 +77,12 @@ Creemos que lo mejor es empezar practicando. Para ello existen diferentes plataf
 * **[HackTheBox](https://www.hackthebox.com/)**: Probablemente la mejor y mas famosa plataforma de CTF (capture the flag) para practicar. Básicamente tiene dos tipos de retos, **machines** y **challenges**. Las machines son máquinas sueltas para practicar y los challenges son retos que engloban varias máquinas asi como otras actividades. En ambos casos se dividen en **activas** y **retiradas**. Con la versión gratuita solo se puede acceder a las activas, pero la politica de HackTheBox impide que se publiquen soluciones de máquinas o retos activos por lo que solo se encontrarán en la red articulos o writeups de las retiradas. Para poder acceder a las retiradas hay que hacerse VIP con un coste de 12 euros/mes.
 * **[Proving Grounds](https://www.offensive-security.com/labs/individual/)**: De Offensive Security, creadores de Kali Linux y que certifican el famoso OSCP. Tiene dos modalidades, **Play** y **Practice**. La parte Play es gratuita y son unas 50 máquinas Linux muy interesantes para prácticar hacking web.
 * **[PortSwigger - Web Security Academy](https://portswigger.net/web-security)**: PortSwigger son los creadores de BurpSuite. Presenta una serie de prácticas por Vulnerabilidad, muy interesante al principio. 
+
+# Metodología de aprendizaje
+
+Lo ideal es empezar viendo videos de resolución de máquinas que luego podamos intentar hacer nosotros. Los videos que recomedaremos son muy didacticos y ayudan a entender la metodología de pentesting. Deberiamos comenzar con videos de máquinas sencillas y de una metodológia concreta.
+
+Posteriormente, podriamos empezar a probar máquinas por nosotros mismos. Cuando nos quedemos atascado podemos revisar o bien un video o bien leyendo un writeup de la máquina. 
+
+A medida que vayamos practicando iremos automatizando las cosas y menos veces tendremos que mirar.
+
