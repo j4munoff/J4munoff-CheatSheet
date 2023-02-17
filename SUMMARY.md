@@ -13,8 +13,12 @@
 ## Pentesting
 
 * [Introducción](pentesting/introduccion.md)
+* [Metodología](pentesting/metodologia.md)
+* [Herramientas](pentesting/herramientas.md)
 * [Recursos pentesting](pentesting/recursos-pentesting.md)
-* [Enumeración](pentesting/enumeracion.md)
+* [Enumeración](pentesting/enumeracion/README.md)
+  * [Discovering hosts](pentesting/enumeracion/discovering-hosts.md)
+  * [Discovering ports](pentesting/enumeracion/discovering-ports.md)
 * [Explotación](pentesting/explotacion.md)
 * [Escalada de privilegios](pentesting/escalada-de-privilegios.md)
 * [Reporting](pentesting/reporting.md)
@@ -22,4 +26,5 @@
 ## writeups
 
 * [Introducción](writeups/introduccion.md)
-* [VulnHub](writeups/vulnhub.md)
+* [VulnHub](writeups/vulnhub/README.md)
+  * [KioptrixVM3](writeups/vulnhub/kioptrixvm3.md)
