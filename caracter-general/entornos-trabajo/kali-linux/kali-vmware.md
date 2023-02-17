@@ -68,14 +68,10 @@ El usuario/password por defecto es **kali/kali**.
 * **Ctlr+Alt+Enter**: Entrar o salir de pantalla completa.
 * **Ctlr+Alt**: Escapar de la máquina virtual. Se libera el ratón.
 
-## Actualización y configuración de Kali Linux
+## Actualización de Kali Linux
 
 
-Aqui se describe algunos comandos para actualizar y *tunear* Kali Linux. Tambien es compatible con Parrot OS y otras distribuciones basadas en Debian/Ubuntu.
-
-La parte de *tunear* es muy personal y cada persona elige que herramientas prefiere y como disponerlas en la máquina. En este documento describimos un tunning muy básico.
-
-### Actualizar el sistema
+Aqui se describe algunos comandos para actualizar Kali Linux. 
 
 Lo primero de todo es modificar el idioma del teclado. Navegamos por el menú de aplicaciones hasta **keyboard**.
 
@@ -143,8 +139,13 @@ apt autoremove
 ```bash
 reboot
 ```
+# Configuración del entorno
 
-### Instalar herramientas y configurar el sistema
+Independientemente del sistema instalado y actualizado, **Kali Linux** o **Parrot OS**, e independientemente de la plataforma de virtualización, **VMware** o **VirtualBox**, se deben instalar algunas herramientas adiccionales y liego poder *tunear* un poco el sistema.
+
+La parte de *tunear* es muy personal, lo mismo que las herramientas adiccionales a intalar, y cada persona elige que herramientas prefiere y como disponerlas en la máquina. En este documento describimos un tunning muy básico.
+
+## Instalar herramientas
 
 Vamos a instalar una serie de herramientas utiles:
 
@@ -189,9 +190,9 @@ Ahora con los repositorios instados y actualizados podemos instalar los prgramas
 sudo apt install terminator aptitude sublime-text locate code cherrytree -y 
 ```
 
-### Configurar el sistema.
+### Configuración del entorno.
 
-Configuramos brevemente el sistema.
+
 
 Podemos agregar las aplicaciones mas utilizadas a la barra superior.
 
