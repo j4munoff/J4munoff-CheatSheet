@@ -9,3 +9,15 @@
   * [Kali Linux](caracter-general/entornos-trabajo/kali-linux/README.md)
     * [Instalación y configuración de Kali Linux en VMWare](caracter-general/entornos-trabajo/kali-linux/kali-vmware.md)
     * [Instalación y configuración de Kali Linux en VirtualBox](caracter-general/entornos-trabajo/kali-linux/kali-virtualbox.md)
+
+## Pentesting
+
+* [Introducción](pentesting/introduccion.md)
+* [Enumeración](pentesting/enumeracion.md)
+* [Explotación](pentesting/explotacion.md)
+* [Escalada de privilegios](pentesting/escalada-de-privilegios.md)
+* [Reporting](pentesting/reporting.md)
+
+## writeups
+
+* [VulnHub](writeups/vulnhub.md)
