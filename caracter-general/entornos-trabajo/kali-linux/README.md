@@ -1,7 +1,7 @@
 
 # Kali Linux
 
-Aqui podremos encontrar diferentes recursos asociados al sistema operativo Kali Linux.
+Aquí podremos encontrar diferentes recursos asociados al sistema operativo Kali Linux.
 
 A continuación se lista una serie de recursos interesantes para comenzar con Kali Linux:
 

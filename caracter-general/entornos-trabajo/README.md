@@ -1,3 +1,3 @@
 # Entornos de trabajo
 
-Encontramos aqui diferentes comandos utiles para cosas variadas.
+Encontramos aquí diferentes comandos útiles para cosas variadas.

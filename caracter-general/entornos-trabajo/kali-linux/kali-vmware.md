@@ -7,7 +7,7 @@ Se describe a continuación el proceso de instalación de **Kali Linux** en VMWa
 Kali Linux se puede descargar en varios formatos. Hay dos que nos pueden interesar.
 
 **Versión ISO** que permite instalar una versión limpia y en el idioma que queramos.
-**Imagen de máqina virtual** ya instalada.
+**Imagen de máquina virtual** ya instalada.
 
 Elegiremos la segunda opción por facilidad.
 
@@ -43,17 +43,17 @@ Una vez abierta tenemos que configurarla, para ello pulsamos la opción **Edit v
 Hay que modificar las siguientes opciones:
 
 * **Memoria**: Un mínimo de 4GB de ram.
-* **Procesadores/nucleos**: Depende de la configuración de cada PC, lo dejamos en 2/2.
+* **Procesadores/núcleos**: Depende de la configuración de cada PC, lo dejamos en 2/2.
 * **HDD**: No se toca. Viene con un disco de 80 GB y en principio es suficiente.
 * **CD/DVD**: Si el ordenador no tiene dispositivo de lectura de CD/DVD debemos eliminar este dispositivo.
 * **Network Adapter**: Hay que dejar la red en modo **NAT** para trabajar en un entorno de red controlado y que no se envenene la red interna.
 * **USB controler**: Se deja con compatibilidad 2.0 por si se necesita conectar dispositivos a la máquina virtual, como una tarjeta Wifi USB.
-* **Tarjeta de sonido**: En este entorno eliminamos el dospositivo.
+* **Tarjeta de sonido**: En este entorno eliminamos el dispositivo.
 * **Display**: Desactivamos los gráficos 3D.
 
 ![](/.gitbook/assets/kali7.png)
 
-En la pestaña **Options** podemos cambiar el nomnbre de la máquina virtual y añadir un directorio compartido con el PC.
+En la pestaña **Options** podemos cambiar el nombre de la máquina virtual y añadir un directorio compartido con el PC.
 
 ![](/.gitbook/assets/kali9.png)
 
@@ -71,7 +71,7 @@ El usuario/password por defecto es **kali/kali**.
 ## Actualización de Kali Linux
 
 
-Aqui se describe algunos comandos para actualizar Kali Linux. 
+Aquí se describe algunos comandos para actualizar Kali Linux. 
 
 Lo primero de todo es modificar el idioma del teclado. Navegamos por el menú de aplicaciones hasta **keyboard**.
 
@@ -82,7 +82,7 @@ Se desbloquea **system defaults** para que nos permita modificar, se añade el t
 
 ![](/.gitbook/assets/kali13.png)
 
-Tambien es conveniente cambiar la hora del sistema. Para ello con el botón derecho del raton donde se muestra la hora elegimos **properties**.
+También es conveniente cambiar la hora del sistema. Para ello con el botón derecho del ratón donde se muestra la hora elegimos **properties**.
 
 ![](/.gitbook/assets/kali14.png)
 

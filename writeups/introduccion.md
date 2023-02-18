@@ -31,7 +31,7 @@ En **windows** la flag del usuario se leería:
 type c:\USers\pepito\Desktop\user.txt
 ```
 
-Para acabar una máquina de ipo CTF, despues de la intrusión hay que buscar una vía de escalar privilegios que nos permita convertirnos en el usuario **root** en sistemas linux o en los usuarios **Administrator** o **NT Authority System** en sistemas linux.
+Para acabar una máquina de ipo CTF, después de la intrusión hay que buscar una vía de escalar privilegios que nos permita convertirnos en el usuario **root** en sistemas linux o en los usuarios **Administrator** o **NT Authority System** en sistemas linux.
 
 La forma de demostrar la escalada de privilegios es obteniendo la segunda flag llamada **root.txt**.
 
@@ -48,7 +48,7 @@ type c:\USers\Administrator\Desktop\user.txt
 
 No olvidar que esto es solo en máquinas de aprendizaje. En auditorias reales solo hay que documentar las evidencias.
 
-Como curiosidad, algunas empresas que contratan auditorias, colocan banderas para poder ver si es real el aacceso al sistema.
+Como curiosidad, algunas empresas que contratan auditorias, colocan banderas para poder ver si es real el acceso al sistema.
 
 
 ## Enlaces interesantes sobre writeups
@@ -56,7 +56,7 @@ Como curiosidad, algunas empresas que contratan auditorias, colocan banderas par
 Algunos enlaces de writeups interesantes son:
 
 * Writeups escritos
-    * [Infayer: Maquinas resueltas y articulos curiosos](https://infayer.com/)
+    * [Infayer: Maquinas resueltas y artículos curiosos](https://infayer.com/)
     * [Intrusionz3r0: Maquinas HTB y mas](https://intrusionz3r0.github.io/posts/Windows/)
     * [Maquinas resueltas TryhackMe y mas](https://guarina0x0.github.io/)
     * [Foro de Xdann1](https://xdann1.github.io/)

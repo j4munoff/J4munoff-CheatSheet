@@ -1,26 +1,26 @@
 
 # Configuración del entorno
 
-Independientemente del sistema instalado y actualizado, **Kali Linux** o **Parrot OS**, e independientemente de la plataforma de virtualización, **VMware** o **VirtualBox**, se deben instalar algunas herramientas adiccionales y luego poder *tunear* un poco el sistema.
+Independientemente del sistema instalado y actualizado, **Kali Linux** o **Parrot OS**, e independientemente de la plataforma de virtualización, **VMware** o **VirtualBox**, se deben instalar algunas herramientas adicionales y luego poder *tunear* un poco el sistema.
 
-La parte de *tunear* es muy personal, lo mismo que las herramientas adiccionales a instalar, y cada persona elige que herramientas prefiere y como disponerlas en la máquina. En este documento describimos un tunning muy básico.
+La parte de *tunear* es muy personal, lo mismo que las herramientas adicionales a instalar, y cada persona elige que herramientas prefiere y como disponerlas en la máquina. En este documento describimos un tunning muy básico.
 
 ## Instalar herramientas
 
-Vamos a instalar una serie de herramientas utiles:
+Vamos a instalar una serie de herramientas útiles:
 
-* **Terminator**: Es un gestor de terminal muy versatil que permite, entre otras cosas dividir la terminal en varias terminales.
+* **Terminator**: Es un gestor de terminal muy versátil que permite, entre otras cosas dividir la terminal en varias terminales.
 * **Sublime Text**: Editor de texto muy completo.
 * **Locate**: Permite localizar ficheros en el sistema de forma rápida.
 * **Aptitude**: Utilidad que permite buscar herramientas en los repositorios de software.
-* **Cherrytree**: Programa para tomar notas de pentesting, muy versatil.
+* **Cherrytree**: Programa para tomar notas de pentesting, muy versátil.
 * **VS Code**: IDE de programación muy util para trabajar con **markdown** y por su integración con github.
 
 Si se está usando **Parrot OS** la herramienta **terminator** ya estará instalada por lo que aunque le digamos que se instale no hará nada.
 
 De todas las herramientas hay dos que no están en los repositorios oficiales y hay que añadir los repositorios.
 
-### Agregar repositorios de Subleme Text
+### Agregar repositorios de Sublime Text
 
 Para agregar el repositorio abrimos una terminal y escribimos los siguientes comandos:
 
@@ -46,7 +46,7 @@ La primera linea la podemos obviar si hemos agregado el repositorio anterior.
 
 ### Instalar programas 
 
-Ahora con los repositorios instados y actualizados podemos instalar los prgramas indicados ejecutando el siguiente comando.
+Ahora con los repositorios instados y actualizados podemos instalar los programas indicados ejecutando el siguiente comando.
 
 ```bash
 sudo apt install terminator aptitude sublime-text locate code cherrytree -y 
@@ -91,7 +91,7 @@ Nos creamos primero un script que llamaremos **ethernet_status.sh** y que guarda
 echo "          Local: $(/usr/sbin/ifconfig eth0 | grep "inet " | awk '{print $2}')" 
 ```
 
-Lo importante es el nombre de la interface de red. Normalmente en Kali es **eth0** y en Parrot es **ens33**. Tambien puede variar si se usa VMware en la creación o VirtualBox. Para ver el nombre de nuestra interface en kali abrimos una terminal y ejecutamos **ifconfig**.
+Lo importante es el nombre de la interface de red. Normalmente en Kali es **eth0** y en Parrot es **ens33**. También puede variar si se usa VMware en la creación o VirtualBox. Para ver el nombre de nuestra interface en kali abrimos una terminal y ejecutamos **ifconfig**.
 
 ![](/.gitbook/assets/kali.png)
 
@@ -113,7 +113,7 @@ Y que lo probemos:
 
 ![](/.gitbook/assets/kali25.png)
 
-Ahora lo añadimos al panel. Para ello en algún punto vacio de la barra superior, en adelante panel, con el botin derecho creamos un nuevo item:
+Ahora lo añadimos al panel. Para ello en algún punto vacío de la barra superior, en adelante panel, con el botón derecho creamos un nuevo item:
 
 ![](/.gitbook/assets/kali26.png)
 
@@ -121,7 +121,7 @@ filtramos para poder visualizar y elegir la opción **Generic Monitor**.
 
 ![](/.gitbook/assets/kali27.png)
 
-Damos doble clic a Generic Monitor y cderramos el panel. En la parte izquierda del panel se añande una opción **(genmon)XXX**. Lo primero que hacemos es moverla a donde queremos.
+Damos doble clic a Generic Monitor y cerramos el panel. En la parte izquierda del panel se añade una opción **(genmon)XXX**. Lo primero que hacemos es moverla a donde queremos.
 
 ![](/.gitbook/assets/kali28.png)
 
@@ -137,15 +137,15 @@ Se nos abre este panel:
 
 En el cuadro **Command** hay que escribir la ruta del script creado, **/home/kali/.config/personal/scripts/ethernet_status.sh**, o bien navegar hasta el pulsando **...**.
 
-Desactibamos el check de Label. Ya hemos puesto nosotros en el script una label.
+Desactivamos el check de Label. Ya hemos puesto nosotros en el script una label.
 
 Como nuestra IP no cambia no es necesario que le demos tiempo de comprobación. Podemos cambiar los 30 segundos por defecto a 3600 para que lo compruebe cada hora.
 
-Podemos cambiar la fuente tambien.
+Podemos cambiar la fuente también.
 
 ![](/.gitbook/assets/kali32.png)
 
-Y salvamos. YA deberiamos ver nuestra IP.
+Y salvamos. Ya deberíamos ver nuestra IP.
 
 ![](/.gitbook/assets/kali33.png)
 
@@ -196,14 +196,14 @@ De igual forma que en el script anterior, creamos un **Generic Monitor** con la 
 
 ![](/.gitbook/assets/kali37.png)
 
-Salvamos y automaticamente ya vemos el contenido del fichero objetivo.
+Salvamos y automáticamente ya vemos el contenido del fichero objetivo.
 
 ![](/.gitbook/assets/kali38.png)
 
 
 #### Creación de utilidad que escriba y limpie el fichero.
 
-Lo primero que hemos de hacer es averiguar que tipo de SHELL tenemos para saber que fichero tenemos que modificar. Existen valiar formas de hacerlo.
+Lo primero que hemos de hacer es averiguar que tipo de SHELL tenemos para saber que fichero tenemos que modificar. Existen varias formas de hacerlo.
 
 * Buscando nuestro usuario en el fichero /etc/passwd
 
@@ -213,7 +213,7 @@ Lo primero que hemos de hacer es averiguar que tipo de SHELL tenemos para saber 
 
 ![](/.gitbook/assets/kali40.png)
 
-En ambos casos nos devuelbe lo mismo. Esta versión de Kali utiliza una **zsh**.
+En ambos casos nos devuelve lo mismo. Esta versión de Kali utiliza una **zsh**.
 
 Al ser una **zsh** tendremos que tocar el fichero **/home/kali/.zshrc**.
 Si hubiera sido una **bash** tendríamos que tocar el fichero **/home/kali/.bashrc**.
@@ -241,10 +241,10 @@ La función **setTarget** escribe en el fichero **/home/kali/.config/personal/ob
 
 Salvamos los cambios del fichero y cerramos la terminal para abrir otra nueva y que coja el cambio.
 
-Y probamos. Primero la función **cleanTarget**. Si ejecutamos y esperamos unos segundos veremos que desaparece lo que teniamos.
+Y probamos. Primero la función **cleanTarget**. Si ejecutamos y esperamos unos segundos veremos que desaparece lo que teníamos.
 
 ![](/.gitbook/assets/kali41.png)
 
-Ahora **setTarget**. La ejecutamos y unos segundos despues aparece el nuevo objetivo.
+Ahora **setTarget**. La ejecutamos y unos segundos después aparece el nuevo objetivo.
 
 ![](/.gitbook/assets/kali42.png)
