@@ -1,3 +1,3 @@
 # Entornos de trabajo
 
-Encontramos aquí diferentes comandos útiles para cosas variadas.
+Encontramos aquí las diferentes instalaciones de entornos que realicemos.
