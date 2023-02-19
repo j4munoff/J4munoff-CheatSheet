@@ -19,6 +19,12 @@ Destacar que esta máquina no tiene banderas. Utilizaremos como banderas:
 * La contraseña del usuario **loneferret** como bandera de usuario.
 * El contenido del fichero **/root/Congrats.txt** como bandera de root.
 
+Existen varios writeups de esta máquina:
+
+* <https://steflan-security.com/vulnhub-kioptrix-level-1-2-walkthrough/>
+* <https://ratiros01.medium.com/vulnhub-kioptrix-level-1-2-3-9be13ab09011>
+
+
 ## Host discovery
 
 Tenemos dos máquinas, la máquina atacante Kali Linux y la máquina victima, Kioptrix. El problema es que no sabemos la IP de la máquina victima. Utilizaremos técnicas de [Discovering hosts](pentesting/enumeracion/discovering-hosts.md) para averiguarla. Por ejemplo **arp-scan**.
