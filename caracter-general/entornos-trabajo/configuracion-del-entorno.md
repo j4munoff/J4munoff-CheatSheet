@@ -248,3 +248,20 @@ Y probamos. Primero la función **cleanTarget**. Si ejecutamos y esperamos unos 
 Ahora **setTarget**. La ejecutamos y unos segundos después aparece el nuevo objetivo.
 
 ![](/.gitbook/assets/kali42.png)
+
+### Plugins de Firefox
+
+Es conveniente añadir algunos **AddOns* a Firefox. Iremos añadiendo mas a medida que los necesitemos. En principio añadimos los siguientes:
+
+#### Wappalyzer
+
+Nos enumera las tecnologías con las que está creada una Web.
+
+![](/.gitbook/assets/plug01.png)
+
+
+#### FoxyProxy
+
+Nos permite tener varios proxies configurados. Para utilizarlo con Burpsuite.
+
+![](/.gitbook/assets/plug02.png)
