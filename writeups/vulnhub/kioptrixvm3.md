@@ -27,7 +27,7 @@ Existen varios writeups de esta máquina:
 
 ## Host discovery
 
-Tenemos dos máquinas, la máquina atacante Kali Linux y la máquina victima, Kioptrix. El problema es que no sabemos la IP de la máquina victima. Utilizaremos técnicas de [Discovering hosts](pentesting/enumeracion/discovering-hosts.md) para averiguarla. Por ejemplo **arp-scan**.
+Tenemos dos máquinas, la máquina atacante Kali Linux y la máquina victima, Kioptrix. El problema es que no sabemos la IP de la máquina victima. Utilizaremos técnicas de [Discovering hosts](/pentesting/enumeracion/discovering-hosts.md) para averiguarla. Por ejemplo **arp-scan**.
 
 ```bash
 sudo arp-scan -I eth0 --localnet
