@@ -28,6 +28,7 @@
   * [LFI - Local File Inclusion](pentesting/explotacion/lfi-local-file-inclusion.md)
   * [RFI - Remote File Inclusion](pentesting/explotacion/rfi-remote-file-inclusion.md)
   * [RCE - Reverse Shell](pentesting/explotacion/rce-reverse-shell.md)
+  * [Fuerza bruta](pentesting/explotacion/fuerza-bruta.md)
 * [Escalada de privilegios](pentesting/escalada-de-privilegios/escalada-de-privilegios.md)
   * [Escalada de privilegios en Linux](pentesting/escalada-de-privilegios/escalada-de-privilegios-en-linux.md)
   * [Escalada de privilegios en windows](pentesting/escalada-de-privilegios/escalada-de-privilegios-en-windows.md)
