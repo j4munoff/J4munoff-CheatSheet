@@ -23,6 +23,7 @@
   * [Discovering hosts](pentesting/enumeracion/discovering-hosts.md)
   * [Discovering ports](pentesting/enumeracion/discovering-ports.md)
   * [Fuzzing](pentesting/enumeracion/fuzzing.md)
+  * [SMB](pentesting/enumeracion/SMB.md)
 * [Explotación](pentesting/explotacion/README.md)
   * [Directory Path Traversal](pentesting/explotacion/directory-traversal.md)
   * [LFI - Local File Inclusion](pentesting/explotacion/lfi-local-file-inclusion.md)
