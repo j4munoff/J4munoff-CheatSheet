@@ -12,6 +12,13 @@
     * [Instalación y configuración de Kali Linux en VirtualBox](caracter-general/entornos-trabajo/kali-linux/kali-virtualbox.md)
   * [Configuración del entorno](caracter-general/entornos-trabajo/configuracion-del-entorno.md)
 
+## Linux
+* [Linux](linux/README.md)
+
+## Windows
+* [CMD](windows/CMD.md)
+* [PowerShell](windows/PowerShell.md)
+
 ## Pentesting
 
 * [Introducción](pentesting/introduccion.md)
