@@ -22,6 +22,7 @@
 ## Pentesting
 
 * [Introducción](pentesting/introduccion.md)
+* [Chuleta](pentesting/chuleta.md)
 * [Metodología](pentesting/metodologia.md)
 * [Herramientas](pentesting/herramientas/README.md)
   * [NMAP](pentesting/herramientas/nmap.md)
