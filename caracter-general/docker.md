@@ -9,6 +9,7 @@ En Linux derivadas de Debian/Ubuntu la instalación es:
 ```bash
 apt install docker.io
 ```
+
 Una vez instalado hay que iniciar el demonio.
 
 ```bash
@@ -23,6 +24,24 @@ Creamos un archivo **Dockerfile** de la siguiente forma:
 FROM ubuntu:latest
 
 MAINTAINER Maripili maripili@maripili.com
+
+```
+
+Otro ejemplo mas completo:
+
+```console
+
+FROM ubuntu:latest
+
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt update && apt install -y apache2 php libapache2-mod-php mariadb-server php-mysql
+
+# A lo mejor hay que setear la variable short_open_tag del fichero /etc/php/8.1/apache2/php.ini de False a True
+
+EXPOSE 80
+
+ENTRYPOINT service apache2 start && service mysql start && /bin/bash
 
 ```
 
@@ -86,7 +105,7 @@ docker exec -it 123456789 bash
 
 Se le pasa el id de contenedor y el comando, en este caso una bash. Los parámetros -i y -t son para que permita la entrada interactiva y para que asigne tty respectivamente.
 
-## Comandos mas comunes:
+## Comandos mas comunes
 
 * **docker rm $(docker ps -a -q) –force**: este comando se utiliza para eliminar todos los contenedores en el sistema, incluyendo los contenedores detenidos. La opción “-q” se utiliza para mostrar sólo los identificadores numéricos de los contenedores, y la opción “–force” se utiliza para forzar la eliminación de los contenedores que están en ejecución.
 * **docker rm id_contenedor**: este comando se utiliza para eliminar un contenedor específico a partir de su identificador.
@@ -101,7 +120,7 @@ Se denomina así al reenvio de puertos desde el host al contenedor. Se utiliza e
 docker run -p 8080:80 mi_imagen
 ```
 
-Esto redirige el puerto 8080 del host al 80 del contendor.
+Esto redirige el puerto 8080 del host al 80 del contenedor.
 
 ## Monturas
 
