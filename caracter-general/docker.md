@@ -125,3 +125,4 @@ docker-compose up -d
 
 * [Repositorio Docker Vulnhub](https://github.com/vulhub/vulhub)
 * [Simple SQL Injection Training App](https://github.com/appsecco/sqlinjection-training-app)
+* [Cross-Site Scripting](https://github.com/globocom/secDevLabs)
