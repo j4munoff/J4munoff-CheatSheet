@@ -35,13 +35,14 @@ FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt update && apt install -y apache2 php libapache2-mod-php mariadb-server php-mysql
+RUN apt update && apt install -y nano apache2 php libapache2-mod-php mariadb-server php-mysql && net-tools
 
 # A lo mejor hay que setear la variable short_open_tag del fichero /etc/php/8.1/apache2/php.ini de False a True
 
 EXPOSE 80
 
-ENTRYPOINT service apache2 start && service mysql start && /bin/bash
+ENTRYPOINT service apache2 start && service mariadb start && /bin/bash
+
 
 ```
 
