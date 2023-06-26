@@ -40,6 +40,7 @@
   * [RCE - Reverse Shell](pentesting/explotacion/rce-reverse-shell.md)
   * [Fuerza bruta](pentesting/explotacion/fuerza-bruta.md)
   * [SQL Injection](pentesting/explotacion/sql-injection.md)
+  * [Latex Injection](pentesting/explotacion/latex-injection.md)
 * [Escalada de privilegios](pentesting/escalada-de-privilegios/escalada-de-privilegios.md)
   * [Escalada de privilegios en Linux](pentesting/escalada-de-privilegios/escalada-de-privilegios-en-linux.md)
   * [Escalada de privilegios en windows](pentesting/escalada-de-privilegios/escalada-de-privilegios-en-windows.md)
