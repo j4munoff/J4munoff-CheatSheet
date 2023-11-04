@@ -1,6 +1,6 @@
 # VSCODE TIPS
 
-## TIPS y atajos
+## TIPS y atajos.
 
 * Shift + Ctlr + P: Para ejecutar acciones
 * Ctlr + ,: Abre configuración
