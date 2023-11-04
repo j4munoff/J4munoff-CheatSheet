@@ -7,7 +7,7 @@
 * Ctlr + b: Abre o cierra la barra de exploración.
 * Ctlr + k --> p: Muestra los archivos abiertos.
 
-## Configuraciones
+## Configuraciones.
 
 ### Cambiar de cursor
 
