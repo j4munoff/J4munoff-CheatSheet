@@ -11,6 +11,7 @@
     * [Instalación y configuración de Kali Linux en VMWare](caracter-general/entornos-trabajo/kali-linux/kali-vmware.md)
     * [Instalación y configuración de Kali Linux en VirtualBox](caracter-general/entornos-trabajo/kali-linux/kali-virtualbox.md)
   * [Configuración del entorno](caracter-general/entornos-trabajo/configuracion-del-entorno.md)
+  * [Configuración de VSCode](caracter-general/entornos-trabajo/vscode.md)
 * [Docker](caracter-general/docker.md)
 
 ## Linux
