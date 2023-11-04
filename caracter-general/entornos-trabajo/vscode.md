@@ -1,5 +1,6 @@
 # VSCODE TIPS
 
+Aqui mostramos temas de configuración de VSCODE.
 ## TIPS y atajos
 
 * Shift + Ctlr + P: Para ejecutar acciones
