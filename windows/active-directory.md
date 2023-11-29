@@ -13,6 +13,15 @@
 
 Tecnicas de enumeración de directorio activo
 
+### sincronizar reloj.
+
+Es conveniente sincronizar el reloj con el DC.
+
+```bash
+# Sincronizar reloj
+ntpdate 10.10.10.175
+```
+
 ### SMB
 
 Si tiene el puerto 445 lo primero es enumerar con **crackmapexec**, **smbmap**, **smbclient**,....
