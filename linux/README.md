@@ -1,5 +1,5 @@
 
-# Linux
+# Comandos Linux
 
 En esta entrada describimos comandos en **Linux** utilizados en pentesting.
 

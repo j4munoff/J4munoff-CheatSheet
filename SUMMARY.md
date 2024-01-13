@@ -15,11 +15,13 @@
 * [Docker](caracter-general/docker.md)
 
 ## Linux
-* [Linux](linux/README.md)
+* [Comandos](linux/README.md)
+* [BASH](linux/bash.md)
 
 ## Windows
 * [CMD](windows/CMD.md)
 * [PowerShell](windows/PowerShell.md)
+* [Active Directory](windows/active-directory.md)
 
 ## Pentesting
 
@@ -34,6 +36,7 @@
   * [Discovering ports](pentesting/enumeracion/discovering-ports.md)
   * [Fuzzing](pentesting/enumeracion/fuzzing.md)
   * [SMB](pentesting/enumeracion/SMB.md)
+  * [PCAP](pentesting/enumeracion/PCAP.md)
 * [Explotación](pentesting/explotacion/README.md)
   * [Directory Path Traversal](pentesting/explotacion/directory-traversal.md)
   * [LFI - Local File Inclusion](pentesting/explotacion/lfi-local-file-inclusion.md)
@@ -54,3 +57,5 @@
   * [KioptrixVM3](writeups/vulnhub/kioptrixvm3.md)
 * [TryHackMe](writeups/tryhackme/README.md)
   * [RootMe](writeups/tryhackme/rootme.md)
+* [HackTheBox](writeups/hackthebox/README.md)
+  * [Cap](writeups/hackthebox/cap.md)
