@@ -2,7 +2,7 @@
 
 Aquí se mostrarán los writeups de las máquinas resueltas de **HackTheBox**.
 
-## Conectar VPN y arrancar máquinas de HackTheBox
+## Conectar VPN y arrancar máquinas de HackTheBox.
 
 Para poder trabajar con **HackTheBox** es necesario crearse una cuenta, lógicamente.
 
@@ -23,5 +23,7 @@ Una vez dentro podemos ir a **Machines** y buscar un path o una máquina.
 Entramos en la página de la máquina y buscamos la opción **Start Machine** y pulsamos.
 
 Tarda un minuto en arrancar y mostrarnos la IP.
+
+Es posible que alguna máquinas antiguas no se vean.
 
 
