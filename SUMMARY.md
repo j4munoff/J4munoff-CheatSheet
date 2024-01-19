@@ -59,4 +59,5 @@
   * [RootMe](writeups/tryhackme/rootme.md)
 * [HackTheBox](writeups/hackthebox/README.md)
   * [Optimum](writeups/hackthebox/optimum.md)
+  * [Blue](writeups/hackthebox/blue.md)
   * [Cap](writeups/hackthebox/cap.md)
