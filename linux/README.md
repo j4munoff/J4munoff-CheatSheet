@@ -48,4 +48,15 @@ Los páremetros fNT es para que la conexión sea en segundo plano.
 ssh -R 4343:127.0.0.1:3306 kali@10.10.53.13 -fNT
 ```
 
-Prueba
+Crear conexión directa:
+
+```bash
+ssh daniel@10.10.10.102 -L 8081:127.0.0.1:8082
+
+```
+
+## Averiguar fabricante de MAC
+
+```bash
+macchanger -l | grep "00:0c:29"
+```
