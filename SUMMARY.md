@@ -61,3 +61,4 @@
   * [Optimum](writeups/hackthebox/optimum.md)
   * [Blue](writeups/hackthebox/blue.md)
   * [Cap](writeups/hackthebox/cap.md)
+  * [Hawk](writeups/hackthebox/hawk.md)

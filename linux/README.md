@@ -60,3 +60,14 @@ ssh daniel@10.10.10.102 -L 8081:127.0.0.1:8082
 ```bash
 macchanger -l | grep "00:0c:29"
 ```
+## Ver estado de un puerto
+
+```bash
+lsof -i:8082
+```
+
+## Ver procesos
+
+```bash
+ps -faux
+```
