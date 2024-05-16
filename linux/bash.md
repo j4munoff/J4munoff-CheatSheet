@@ -28,6 +28,12 @@ wait
 tput cnorm
 ```
 
+Y en modo OneLinner:
+
+```bash
+echo 10.0.15.{1..255} | xargs parallel -j30 ping -c1 -- | grep 'bytes from'
+```
+
 ## Port discovery
 
 Script para descubrir puertos abiertos de un maquina:
