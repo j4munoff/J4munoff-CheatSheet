@@ -58,6 +58,35 @@ wait
 tput cnorm
 ```
 
+## Monitor de procesos CRON
+
+Script que monitoriza diferencias en procesos para destacar procesos CRON que se estén ejecutando en el sistema,
+
+```bash
+#!/bin/bash
+
+# procmon.sh
+
+function ctlr_c(){
+    echo -e "\n\n[!] Saliendo...\n"
+    tput cnorm
+    exit 1
+}
+
+# Ctlr+C
+trap ctlr_c INT
+
+old_process = $(ps -eo command)
+
+tput civis
+while true; do
+    new_process = $(ps -eo command)    
+    diff <(echo $old_process) <(echo $new_process) | grep "[\>\<]" | grep -v "kworker"
+    old_process = $new_process
+done
+tput cnorm
+```
+
 ## Descarga IDOR
 
 Script que aprovecha un idor para descargar de forma masiva en modo **oneliner**:
