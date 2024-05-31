@@ -55,7 +55,7 @@
 * [Introducción](writeups/introduccion.md)
 * [VulnHub](writeups/vulnhub.md)
   * [KioptrixVM3](writeups/vulnhub/kioptrixvm3.md)
- [Vulnyx](writeups/vulnyx.md)
+* [Vulnyx](writeups/vulnyx.md)
   * [Ready](writeups/vulnys/ready.md)  
 * [TryHackMe](writeups/tryhackme/README.md)
   * [RootMe](writeups/tryhackme/rootme.md)
