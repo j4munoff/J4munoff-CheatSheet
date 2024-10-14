@@ -1,6 +1,7 @@
 # VSCODE TIPS
 
-Aqui mostramos temas de configuración de VSCODE.
+Aquí mostramos temas de configuración de VSCODE.
+
 ## TIPS y atajos
 
 * Shift + Ctlr + P: Para ejecutar acciones
@@ -8,10 +9,11 @@ Aqui mostramos temas de configuración de VSCODE.
 * Ctlr + b: Abre o cierra la barra de exploración.
 * Ctlr + k --> p: Muestra los archivos abiertos.
 
-## Configuraciones.
+## Configuraciones
 
 ### Cambiar de cursor
 
+    
 Configuración --> buscar **cursor blinking** --> expand
 
 ### Selección etiquetas de cierre html
@@ -22,7 +24,7 @@ Configuración --> buscar **linked editing** --> habilitar
 
 Configuración --> buscar **Bracket pair colorization** --> habilitar
 
-### Mofificar color a las lineas de l par de claves
+### Modificar color a las lineas de l par de claves
 
 Configuración --> buscar **Bracket pairs** --> habilitar
 
@@ -89,11 +91,12 @@ Configuración --> buscar **Cursor animation** --> habilitar
     "maven.terminal.useJavaHome": true
 }
 ```
-# Extensiones
+
+## Extensiones
 
 * Spanish language: Para lenguaje en español.
-* Fluent icons: Iconos 
-* Material Icon Theme: Tambien cambia iconos
+* Fluent icons: Iconos
+* Material Icon Theme: También cambia iconos
 * Error Lends: Error en la misma linea
 * Console Ninja: Resultado de la ejecución en el fuente
 * Image preview: Previsualizar imágenes
@@ -101,9 +104,23 @@ Configuración --> buscar **Cursor animation** --> habilitar
 * Prettier: Formateador de código JS
 * Auto Rename Tag: REnombra automáticamente etiquetas aunque no sean ficheros HTML.
 * GITLEns: Mejora la info de git
-* Code spell checker: corrije errores de código, con soporte español
+* Code spell checker: corrige errores de código, con soporte español
 * Markdown all in one: Para trabajar con markdown
 * IntelliCode: IA para optimizar código
+* Peacock: Cambia de color entre proyectos
+* Postman: Ejecución de API REST
+* Better Comments: Mejores comentarios
+* GitLens: Ver cambios de GIT
+* Git History: Ver historial de GIT
+* Git Graph: Ver gráfico de GIT
+* Auto close Tag: Para cerrar automáticamente las etiquetas.
+* Auto Rename Tag: Para renombrar etiquetas
+* Bookmarks: Par poner marcadores
+* Bracket Jumper: Salta de inicio a fin entre llaves
+* Change String Case: Cambia tipo de string, mayúsculas, minúsculas, etc.
+* IntelliCode: Ver opciones al teclear
+* Python Indent: Corrige la indentación python al hacer Enter
+* SonarLint: Reglas de programación
 
 ## Temas
 
@@ -111,3 +128,5 @@ Temas mas usados
 
 * One Dark Pro
 * Andromeda
+* Tokyo Night Dark
+* Cobalt2 Theme Tweaked
