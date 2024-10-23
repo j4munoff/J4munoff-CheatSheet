@@ -13,6 +13,7 @@
   * [Configuración del entorno](caracter-general/entornos-trabajo/configuracion-del-entorno.md)
   * [Configuración de VSCode](caracter-general/entornos-trabajo/vscode.md)
 * [Docker](caracter-general/docker.md)
+* [GIT](caracter-general/git.md)
 
 ## Linux
 * [Comandos](linux/README.md)
@@ -40,11 +41,17 @@
 * [Explotación](pentesting/explotacion/README.md)
   * [Directory Path Traversal](pentesting/explotacion/directory-traversal.md)
   * [LFI - Local File Inclusion](pentesting/explotacion/lfi-local-file-inclusion.md)
+  * [File Upload](pentesting/explotacion/file-upload.md)
   * [RFI - Remote File Inclusion](pentesting/explotacion/rfi-remote-file-inclusion.md)
   * [RCE - Reverse Shell](pentesting/explotacion/rce-reverse-shell.md)
   * [Fuerza bruta](pentesting/explotacion/fuerza-bruta.md)
   * [SQL Injection](pentesting/explotacion/sql-injection.md)
   * [Latex Injection](pentesting/explotacion/latex-injection.md)
+  * [Steganografía](pentesting/explotacion/steganografia.md)
+  * Puertos
+    * [79 - Fingers](pentesting/explotacion/puertos/79-Finger.md)
+    * [6379 - Redis](pentesting/explotacion/puertos/6379-Redis.md)
+    * [8080 - Tomcat](pentesting/explotacion/puertos/8080-Tomcat.md)
 * [Escalada de privilegios](pentesting/escalada-de-privilegios/escalada-de-privilegios.md)
   * [Escalada de privilegios en Linux](pentesting/escalada-de-privilegios/escalada-de-privilegios-en-linux.md)
   * [Escalada de privilegios en windows](pentesting/escalada-de-privilegios/escalada-de-privilegios-en-windows.md)

